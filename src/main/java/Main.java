@@ -6,6 +6,19 @@ public class Main {
     }
 
     public static void zad1() {
-        System.out.println("");
+        Scanner scanner = new Scanner(System.in);
+        task(scanner);
+    }
+
+    public static void task(Scanner scanner) {
+        System.out.println("Number: ");
+        double number = scanner.nextDouble();
+        if (number > 0) {
+            System.out.println("The number is positive");
+        } else if (number < 0) {
+            System.out.println("The number is negative");
+        } else {
+            System.out.println("The value equals 0");
+        }
     }
 }
